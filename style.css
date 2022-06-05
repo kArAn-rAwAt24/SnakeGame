@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&display=swap');
+*{
+margin: 0;
+padding: 0;
+}
+
+.body{
+    background: url(img/bg.jpg);
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#board{
+    background: linear-gradient(rgb(137, 228, 137), rgb(227, 227, 142));
+    width: 90vmin;
+    height: 92vmin;
+    border: 2px solid black;
+    display: grid;
+    grid-template-rows: repeat(18,1fr);
+    grid-template-columns: repeat(18,1fr);
+}
+
+#scoreBoard{
+    position: absolute;
+    top: 19px;
+    right: 240px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'Inconsolata', monospace;
+}
+#highestScoreBoard{
+    position: absolute;
+    top: 59px;
+    right: 85px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'Inconsolata', monospace;
+}
+
+.head{
+    /* background: linear-gradient(rgb(247, 5, 5),rgb(246, 246, 13));
+     */
+    background-color: rgb(106, 169, 241);
+    border: 0.25vmin solid black;
+    border-radius: 10px;
+    transform: scale(1.03);
+}
+
+.snakeBody{
+    background-color:skyblue;
+    border: .25vmin solid black;
+    border-radius: 12px;
+    /* transform: scale(0.9); */
+}
+
+.food{
+    /* background: linear-gradient(rgb(233, 133, 126),rgb(142, 103, 225)); */
+    background-color: rgb(223, 223, 132);
+    border: 0.2vmin solid rgb(155, 155, 22);
+    border-radius: 25px; 
+    transform: scale(0.95);
+}
